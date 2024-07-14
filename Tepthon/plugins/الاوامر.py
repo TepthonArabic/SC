@@ -56,14 +56,14 @@ thumb_image_path = os.path.join(Config.TMP_DOWNLOAD_DIRECTORY, "thumb_image.jpg"
 Malath = f"**☆┊لـَوحـة أوامـِر TEᑭTᕼOᑎ الشفـافَـة**\n**☆┊المستخـِدم ↶** {mention} \n\n ١**    ۦ اوامــࢪ الـبحـث والـتحميـل **\n ٢**    ۦ اوامــࢪ الـبـوت **\n ٣**    ۦ اوامــࢪ الـوقـتـي **\n ٤**    ۦ اوامــࢪ الـڪــروب¹ **\n ٥**    ۦ اوامــࢪ الـڪــروب² **\n ٦**    ۦ اوامــࢪ الحـسـاب **\n ٦**    ۦ اوامــࢪ الميـديـا والصيــغ **\n\n**•-⛥⤻ لـ؏ـࢪض بقـية الأوامـر اضـغط زࢪ⇒**\n**-⛥⤻ لعـرض الأوامِـࢪ مع الوصـِف أرسل** `.اوامري`\n**- ⛥⤻ لعـرض شـِروحـَات الأوامـر أࢪسـِل** `.مساعدة` "
 Malotha = f"**‌‌‏⚚┃ يتبـع لـوحـة أوامـࢪ TEᑭTᕼOᑎ الشفـافـَة**\n**‌‌‏⚚┃ المستخـِدم -** {mention} \n\n- ٨ ⪧** اوامـِـࢪ الـفــارات **\n- ٩ ⪧** اوامـِـࢪ الخـدمــات الـعامــة **\n- ١٠ ⪧** اوامـِـࢪ الالعــاب **\n- ١١ ⪧** اوامـِـࢪ الـتســليــه**\n- ١٢ ⪧** اوامـِـࢪ التحشيـش**\n- ١٣ ⪧** اوامـِـࢪ الستـوريات**\n- ١٤ ⪧•** اوامـِـࢪ الآفتــارات**\n\n**-‌‌‏⚚⤶ للذهـاب للـوحـة التـاليـة اضغـط زࢪ ⤻  ᯽. **\n**-⛥⤻ لعـرض الأوامِـࢪ مع الوصـِف أرسل** `.اوامري`\n**- ⛥⤻ لعـرض شـِروحـَات الأوامـر أࢪسـِل** `.مساعدة` "
 Malootha = f"**‌‌‏⚚┃ يتبـع لـوحـة أوامـࢪ TEᑭTᕼOᑎ الشفـافـَة**\n**‌‌‏⚚┃ المستخـِدم -** {mention} \n\n•⛥ ١٥•** اوامـِـࢪ الصيــد والتشيكــر **\n•⛥ ١٦•** اوامـِـࢪ النشــر التلقــائي **\n•⛥ ١٧•** اوامـِـࢪ تجميــع النقــاط **\n•⛥ ١٨•** اوامـِـࢪ الاشتـراك الإجبـاري **\n•⛥ ١٩•** اوامـِـࢪ الإضـافة والتفليــش**\n\n**•❐• للرجـوع للوحـه الـرئيسيـة اضغـط زر ⇒**\n**-⛥⤻ لعـرض الأوامِـࢪ مع الوصـِف أرسل** `.اوامري`\n**- ⛥⤻ لعـرض شـِروحـَات الأوامـر أࢪسـِل** `.مساعدة` "
-TG_BOT = Config.TG_BOT_USERNAME
+TG = Config.APP_USERNAME
 TM = time.strftime("%I:%M")
 Channels = f"**•❐•  مرحبـًا عـزيـزي  {mention} **\n**•❐• إليـك مجمـوعــة قنـوات تيــبــثـون ↵ 𝗧𝗲𝗽𝘁𝗵𝗼𝗻 ♥️🧸**\n\n**•❐• استـخـدم الازرار بالاسفــل↓**"
-Zelzal = f"**•◈• إصــدار الســورس ⤽ 2.0**  \n**•◈• المستخــدم ⤽**  {mention}  \n**•◈• وقــت التشغيــل ⤽  {TM}  **\n**•◈• البــوت المســاعـد ⤽  {TG_BOT} **\n**•◈• قنــاة الســورس ⤽  @Tepthon **"
-TGT_BOT = Config.TG_BOT_USERNAME
+Zelzal = f"**•◈• إصــدار الســورس ⤽ 2.0**  \n**•◈• المستخــدم ⤽**  {mention}  \n**•◈• وقــت التشغيــل ⤽  {TM}  **\n**•◈• البــوت المســاعـد ⤽  {TG} **\n**•◈• قنــاة الســورس ⤽  @Tepthon **"
+TGT = Config.APP_USERNAME
 TM = time.strftime("%I:%M")
 Channels = f"**•❐• مرحبًـا عـزيـزي  {mention} **\n**•❐• إليـك مجمـوعــة قنـوات تيبـــثون ↵ 𝗧𝗲𝗽𝘁𝗵𝗼𝗻 ♥️🧸**\n\n**•❐• استـخـدم الازرار بالاسفــل↓**"
-Zelzal = f"**•◈• إصــدار الســورس ⤽ 2.0**  \n**•◈• المستخــدم ⤽**  {mention}  \n**•◈• وقــت التشغيــل ⤽  {TM}  **\n**•◈• البــوت المســاعـد ⤽  {TGT_BOT} **\n**•◈• قنــاة الســورس ⤽  @Tepthon **"
+Zelzal = f"**•◈• إصــدار الســورس ⤽ 2.0**  \n**•◈• المستخــدم ⤽**  {mention}  \n**•◈• وقــت التشغيــل ⤽  {TM}  **\n**•◈• البــوت المســاعـد ⤽  {TGT} **\n**•◈• قنــاة الســورس ⤽  @Tepthon **"
 
 
 #لـوحــة الاوامـِـࢪ - حقــوق تيبثـون - الكـاتب زلـزال الهـيبـة
@@ -84,7 +84,7 @@ async def repozedub(event):
         return
     if event.reply_to_msg_id:
         await event.get_reply_message()
-    response = await event.client.inline_query(Config.TG_BOT_USERNAME, "الاوامر")
+    response = await event.client.inline_query(Config.APP_USERNAME, "الاوامر")
     await response[0].click(event.chat_id)
     await event.delete()
 
@@ -346,7 +346,7 @@ async def repozedub(event):
     TG_BOT = Config.TG_BOT_USERNAME
     if event.reply_to_msg_id:
         await event.get_reply_message()
-    response = await zedub.inline_query(TG_BOT, "تيبثون")
+    response = await zedub.inline_query(TG, "تيبثون")
     await response[0].click(event.chat_id)
     await event.delete()
 
@@ -375,7 +375,7 @@ async def repozedub(event):
     TG_BOT = Config.TG_BOT_USERNAME
     if event.reply_to_msg_id:
         await event.get_reply_message()
-    response = await zedub.inline_query(TG_BOT, "السورس")
+    response = await zedub.inline_query(TG, "السورس")
     await response[0].click(event.chat_id)
     await event.delete()
 
@@ -404,7 +404,7 @@ async def repozedub(event):
     TG_BOT = Config.TG_BOT_USERNAME
     if event.reply_to_msg_id:
         await event.get_reply_message()
-    response = await zedub.inline_query(TG_BOT, "سورس")
+    response = await zedub.inline_query(TG, "سورس")
     await response[0].click(event.chat_id)
     await event.delete()
 
@@ -433,7 +433,7 @@ async def repozedub(event):
     	addgvar("who_id", user)
     name_zed = user_zed.first_name
 
-    response = await event.client.inline_query(Config.TG_BOT_USERNAME, "اليدوي")
+    response = await event.client.inline_query(Config.APP_USERNAME, "اليدوي")
     await response[0].click(event.chat_id)
     await event.delete()
 
@@ -462,7 +462,7 @@ async def repozedub(event):
     	addgvar("who_id", user)
     name_zed = user_zed.first_name
 
-    response = await event.client.inline_query(Config.TG_BOT_USERNAME, "الفيزا")
+    response = await event.client.inline_query(Config.APP_USERNAME, "الفيزا")
     await response[0].click(event.chat_id)
     await event.delete()
 
@@ -492,7 +492,7 @@ async def repozedub(event):
     	addgvar("who_id", user)
     name_zed = user_zed.first_name
 
-    response = await event.client.inline_query(Config.TG_BOT_USERNAME, "الهيروكو")
+    response = await event.client.inline_query(Config.APP_USERNAME, "الهيروكو")
     await response[0].click(event.chat_id)
     await event.delete()
 
@@ -519,7 +519,7 @@ async def repozedub(event):
         return
     else:
     	addgvar("who_id", user)
-    response = await event.client.inline_query(Config.TG_BOT_USERNAME, "التنصيب")
+    response = await event.client.inline_query(Config.APP_USERNAME, "التنصيب")
     await response[0].click(event.chat_id)
     await event.delete()
     
@@ -548,8 +548,6 @@ async def repozedub(event):
     	addgvar("who_id", user)
     name_zed = user_zed.first_name
 
-    response = await event.client.inline_query(Config.TG_BOT_USERNAME, "الهيروكو")
+    response = await event.client.inline_query(Config.APP_USERNAME, "الهيروكو")
     await response[0].click(event.chat_id)
     await event.delete()
-    
-    
