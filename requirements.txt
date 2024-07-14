@@ -1,9 +1,7 @@
-Telethon
+telethon==1.36.0
 telethon-session-sqlalchemy
 setuptools
 wheel
-Flask
-flask_restful
 aiocsv
 aiofiles
 aiohttp
@@ -43,7 +41,6 @@ Pillow
 prettytable
 psutil
 psycopg2-binary
-py-tgcalls==2.0.2
 pyfiglet
 PyGithub
 pygments
@@ -71,10 +68,6 @@ urlextract
 user_agent
 validators
 vcsi
-youtube-search-python==1.4.9
-youtube-search
-youtube_dl
-yt-dlp==2024.4.9
 wand
 wget==3.2
 img2html
