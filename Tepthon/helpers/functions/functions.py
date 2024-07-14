@@ -121,7 +121,7 @@ async def age_verification(event, reply_to_id):
     if ALLOW_NSFW.lower() == "true":
         return False
     results = await event.client.inline_query(
-        Config.TG_BOT_USERNAME, "age_verification_alert"
+        Config.APP_USERNAME, "age_verification_alert"
     )
     await results[0].click(event.chat_id, reply_to=reply_to_id, hide_via=True)
     await event.delete()
@@ -197,7 +197,7 @@ async def hide_inlinebot(borg, bot_name, text, chat_id, reply_to_id, c_lick=0):
 
 async def make_inline(text, borg, chat_id, reply_to_id):
     catinput = f"Inline buttons {text}"
-    results = await borg.inline_query(Config.TG_BOT_USERNAME, catinput)
+    results = await borg.inline_query(Config.APP_USERNAME, catinput)
     await results[0].click(chat_id, reply_to=reply_to_id)
 
 
