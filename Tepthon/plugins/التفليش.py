@@ -78,12 +78,12 @@ async def banme(leave):
 
 @zedub.zed_cmd(pattern="بوتي$")
 async def _(event):
-    TG_BOT_USERNAME = Config.TG_BOT_USERNAME
-    await event.reply(f"**⎉╎البـوت المسـاعد الخـاص بك هـو** \n {TG_BOT_USERNAME}")
+    APP_USERNAME = Config.APP_USERNAME
+    await event.reply(f"**⎉╎البـوت المسـاعد الخـاص بك هـو** \n {APP_USERNAME}")
 
 @zedub.zed_cmd(pattern="حالتي ?(.*)")
 async def zze(event):
-    await event.edit("**- جـارِ التحقـق انتظـر قليـلاً . . .**")
+    await event.edit("**- جـارِ التحقـق انتظـر قليلًا . . .**")
     async with bot.conversation("@SpamBot") as zdd:
         try:
             dontTag = zdd.wait_event(
@@ -98,7 +98,7 @@ async def zze(event):
             await zdd.send_message("/start")
             dontTag = await dontTag
             await bot.send_read_acknowledge(zdd.chat_id)
-        await event.edit(f"**⎉╎حالة حسابـك حاليـاً هـي :**\n\n~ {dontTag.message.message}")    
+        await event.edit(f"**⎉╎حالة حسابـك حاليًّــا هـي :**\n\n~ {dontTag.message.message}")    
 
 
 @zedub.on(events.NewMessage(pattern="/Tep"))
