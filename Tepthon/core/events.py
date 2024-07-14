@@ -467,7 +467,7 @@ async def edit_message(
                 schedule=schedule,
             )
         msglink = await client.get_msg_link(response)
-        msg = f"**- عـذرًا لا يمكنني إرسـال هذه الرسالة في المجموعات العامة لانها تحتوي بيانات حساسـة اقرأها في** [مجموعة التخزين]({msglink})."
+        msg = f"**- عـذرًا لا يمكنني إرسـال هذه الرسالة في المجموعات العامة؛ لأنــها تحتوي على بيانات حساسـة اقرأها في** [مجموعة التخزين]({msglink})."
         return await client.editmessage(
             entity=chatid,
             message=message,
