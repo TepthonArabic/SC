@@ -120,7 +120,7 @@ async def z_alive(event):
     zed_caption += f"**{Z_EMOJI} إصـدار تيبثــون :** `{zedversion}`\n"
     zed_caption += f"**{Z_EMOJI} إصـدار البـايثون :** `{python_version()}\n`"
     zed_caption += f"**{Z_EMOJI} المسـتخدم :** {mention}\n"
-    results = await event.client.inline_query(Config.TG_BOT_USERNAME, zed_caption)
+    results = await event.client.inline_query(Config.APP_USERNAME, zed_caption)
     await results[0].click(event.chat_id, reply_to=reply_to_id, hide_via=True)
     await event.delete()
 
