@@ -1,1 +1,1 @@
-web: gunicorn app:app --daemon && bash Tepthon
+worker: python3 -m Tepthon
