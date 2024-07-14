@@ -128,8 +128,8 @@ async def setup_bot():
                 zedub.session.save()
                 break
         bot_details = await zedub.tgbot.get_me()
-        Config.TG_BOT_USERNAME = f"@{bot_details.username}"
-        # await zedub.start(bot_token=Config.TG_BOT_USERNAME)
+        Config.APP_USERNAME = f"@{bot_details.username}"
+        # await zedub.start(bot_token=Config.APP_USERNAME)
         zedub.me = await zedub.get_me()
         zedub.uid = zedub.tgbot.uid = utils.get_peer_id(zedub.me)
         if Config.OWNER_ID == 0:
@@ -359,7 +359,7 @@ async def verifyLoggerGroup():
         descript = "لا تقم بحذف هذه المجموعة أو التغيير إلى مجموعة عامـة (وظيفتهـا تخزيـن كـل سجـلات وعمليـات البـوت.)"
         photozed = await zedub.upload_file(file="zedthon/malath/Tepthon.jpg")
         _, groupid = await create_supergroup(
-            "مجمـوعـة السجـل تيبثـــون", zedub, Config.TG_BOT_USERNAME, descript, photozed
+            "مجمـوعـة السجـل تيبثـــون", zedub, Config.APP_USERNAME, descript, photozed
         )
         addgvar("PRIVATE_GROUP_BOT_API_ID", groupid)
         print("تم إنشاء مجموعة السجل .. بنجاح ✅")
@@ -386,7 +386,7 @@ async def verifyLoggerGroup():
         descript = "لا تقم بحذف هذه المجموعة أو التغيير إلى مجموعة عامـة (وظيفتهـا تخزيـن رسـائل الخـاص.)"
         photozed = await zedub.upload_file(file="zedthon/malath/Tep.jpg")
         _, groupid = await create_supergroup(
-            "مجمـوعـة التخـزيـن", zedub, Config.TG_BOT_USERNAME, descript, photozed
+            "مجمـوعـة التخـزيـن", zedub, Config.APP_USERNAME, descript, photozed
         )
         addgvar("PM_LOGGER_GROUP_ID", groupid)
         print("تم إنشاء مجموعة التخزين .. بنجاح ✅")
