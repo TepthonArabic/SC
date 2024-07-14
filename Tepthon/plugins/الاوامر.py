@@ -343,7 +343,7 @@ async def zed_handler(event):
 async def repozedub(event):
     if event.fwd_from:
         return
-    TG_BOT = Config.TG_BOT_USERNAME
+    TG = Config.APP_USERNAME
     if event.reply_to_msg_id:
         await event.get_reply_message()
     response = await zedub.inline_query(TG, "تيبثون")
@@ -372,7 +372,7 @@ async def zed_handler(event):
 async def repozedub(event):
     if event.fwd_from:
         return
-    TG_BOT = Config.TG_BOT_USERNAME
+    TG = Config.APP_USERNAME
     if event.reply_to_msg_id:
         await event.get_reply_message()
     response = await zedub.inline_query(TG, "السورس")
@@ -401,7 +401,7 @@ async def zed_handler(event):
 async def repozedub(event):
     if event.fwd_from:
         return
-    TG_BOT = Config.TG_BOT_USERNAME
+    TG = Config.APP_USERNAME
     if event.reply_to_msg_id:
         await event.get_reply_message()
     response = await zedub.inline_query(TG, "سورس")
