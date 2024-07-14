@@ -43,4 +43,4 @@ zedub.tgbot = tgbot = ZedUserBotClient(
     connection=ConnectionTcpAbridged,
     auto_reconnect=True,
     connection_retries=None,
-).start(bot_token=Config.TG_BOT_TOKEN)
+).start(bot_token=Config.APP_TOKEN)
