@@ -190,7 +190,7 @@ async def supc(event):  # Zed-Thon - ZelZal
         try:
    
             idd = event.peer_id.user_id
-            tok = Config.TG_BOT_TOKEN
+            tok = Config.APP_TOKEN
             ch = gvarstatus ("Custom_Pm_Channel")
             try:
                 ch = int(ch)
