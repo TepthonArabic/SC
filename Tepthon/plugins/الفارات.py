@@ -423,7 +423,7 @@ async def variable(event):
     elif input_str == "التوكن" or input_str == "توكن البوت":
         if Config.HEROKU_API_KEY is None:
             return await zed.edit("**⎉╎عـذراً .. عـزيـزي ⚠️**\n**⎉╎هـذا الفـار لا يعمـل الان ✖️**\n**⎉╎سـوف يتم تحديثه لاحقًـا ع منصه كويب 🔄**")
-        variable = "TG_BOT_TOKEN"
+        variable = "APP_TOKEN"
         await asyncio.sleep(1.5)
         if variable in heroku_var:
             await zed.edit("**⎉╎تم تغييـر {} بنجـاح ☑️**\n**⎉╎المتغيـر : ↶**\n `{}` \n**⎉╎يتم الان اعـادة تشغيـل بـوت تيبثـــون يستغـرق الامر 2-1 دقيقــة ▬▭ ...**".format(input_str, vinfo))
@@ -433,7 +433,7 @@ async def variable(event):
     elif input_str == "معرف البوت" or input_str == "معرف بوت":
         if Config.HEROKU_API_KEY is None:
             return await zed.edit("**⎉╎عـذراً .. عـزيـزي ⚠️**\n**⎉╎هـذا الفـار لا يعمـل الان ✖️**\n**⎉╎سـوف يتم تحديثه لاحقًـا ع منصه كويب 🔄**")
-        variable = "TG_BOT_USERNAME"
+        variable = "APP_USERNAME"
         await asyncio.sleep(1.5)
         if variable in heroku_var:
             await zed.edit("**⎉╎تم تغييـر {} بنجـاح ☑️**\n**⎉╎المتغيـر : ↶**\n `{}` \n**⎉╎يتم الان اعـادة تشغيـل بـوت تيبثـــون يستغـرق الامر 2-1 دقيقــة ▬▭ ...**".format(input_str, vinfo))
@@ -605,12 +605,12 @@ async def variable(event):
         delgvar("PC_BLOCK")
 
     elif input_str == "صورة البوت" or input_str == "صوره البوت" or input_str == "صورة الستارت" or input_str == "صوره الستارت" or input_str == "صورة ستارت" or input_str == "صوره ستارت":
-        variable = "BOT_START_PIC"
+        variable = "APP_START_PIC"
         await asyncio.sleep(1.5)
-        if gvarstatus("BOT_START_PIC") is None:
+        if gvarstatus("APP_START_PIC") is None:
         	return await zed.edit("**⎉╎عـذࢪاً عـزيـزي .. انت لـم تقـم باضـافـة فـار {} اصـلاً...**".format(input_str))
         await zed.edit("**⎉╎تم حـذف فـار {} . . بنجـاح ☑️**".format(input_str))
-        delgvar("BOT_START_PIC")
+        delgvar("APP_START_PIC")
 
     elif input_str == "صورة الحماية" or input_str == "صوره الحمايه" or input_str == "صورة الحمايه" or input_str == "صوره الحماية":
         variable = "pmpermit_pic"
@@ -738,7 +738,7 @@ async def variable(event):
     elif input_str == "التوكن" or input_str == "توكن البوت":
         if Config.HEROKU_API_KEY is None:
             return await zed.edit("**⎉╎عـذراً .. عـزيـزي ⚠️**\n**⎉╎هـذا الفـار لا يعمـل الان ✖️**\n**⎉╎سـوف يتم تحديثه لاحقًـا ع منصه كويب 🔄**")
-        variable = "TG_BOT_TOKEN"
+        variable = "APP_TOKEN"
         await asyncio.sleep(1.5)
         if variable not in heroku_var:
         	return await zed.edit("**⎉╎عـذࢪاً عـزيـزي .. انت لـم تقـم باضـافـة فـار {} اصـلاً...**".format(input_str))
@@ -748,7 +748,7 @@ async def variable(event):
     elif input_str == "معرف البوت" or input_str == "معرف بوت":
         if Config.HEROKU_API_KEY is None:
             return await zed.edit("**⎉╎عـذراً .. عـزيـزي ⚠️**\n**⎉╎هـذا الفـار لا يعمـل الان ✖️**\n**⎉╎سـوف يتم تحديثه لاحقًـا ع منصه كويب 🔄**")
-        variable = "TG_BOT_USERNAME"
+        variable = "APP_USERNAME"
         await asyncio.sleep(1.5)
         if variable not in heroku_var:
         	return await zed.edit("**⎉╎عـذࢪاً عـزيـزي .. انت لـم تقـم باضـافـة فـار {} اصـلاً...**".format(input_str))
@@ -936,7 +936,7 @@ async def custom_zed(event):
     elif input_str == "معرف البوت" or input_str == "معرف بوت":
         if Config.HEROKU_API_KEY is None:
             return await zed.edit("**⎉╎عـذراً .. عـزيـزي ⚠️**\n**⎉╎هـذا الفـار لا يعمـل الان ✖️**\n**⎉╎سـوف يتم تحديثه لاحقًـا ع منصه كويب 🔄**")
-        variable = "TG_BOT_USERNAME"
+        variable = "APP_USERNAME"
         if variable not in heroku_var:
             await zed.edit("**⎉╎فـار معرف البوت غيـر موجـود ❌**\n**⎉╎لـ اضـافته بالـرد ع المعرف استخـدم الأمــر : ↶**\n `.اضف فار معرف البوت` \n\n**⎉╎قنـاة السـورس : @Tepthon**")
         else:
@@ -982,7 +982,7 @@ async def custom_zed(event):
             await zed.edit("**⎉╎الفـار {} موجـود ☑️**\n**⎉╎قيمـة الفـار : ↶**\n `{}` \n\n**⎉╎قنـاة السـورس : @Tepthon**".format(input_str, variable))
 
     elif input_str == "صورة البوت" or input_str == "صوره البوت" or input_str == "صورة الستارت" or input_str == "صوره الستارت" or input_str == "صورة ستارت" or input_str == "صوره ستارت":
-        variable = gvarstatus("BOT_START_PIC")
+        variable = gvarstatus("APP_START_PIC")
         if variable is None:
             await zed.edit("**⎉╎فـار صـورة ستـارت البـوت غيـر موجـود ❌**\n**⎉╎لـ اضـافته بالـرد ع صـورة فقـط استخـدم الأمــر : ↶**\n `.اضف صورة البوت` \n\n**⎉╎قنـاة السـورس : @Tepthon**")
         else:
