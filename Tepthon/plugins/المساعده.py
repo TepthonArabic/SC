@@ -11,7 +11,7 @@ from . import mention
 HELP = f"**🧑🏻‍💻┊مـࢪحبًا عـزيـزي {mention}**\n**🛂┊في قائمـة المسـاعـده والشـروحـات\n🛃┊من هنـا يمكنـك إيـجاد شـرح لكـل اوامـر السـورس**\n\n[ᯓ 𝗧𝗘𝗣𝗧𝗛𝗢𝗡 ♥️](https://t.me/Tepthon)\n\n"
 
 
-if Config.TG_BOT_USERNAME is not None and tgbot is not None:
+if Config.APP_USERNAME is not None and tgbot is not None:
 
     @tgbot.on(events.InlineQuery)
     @check_owner
@@ -55,7 +55,7 @@ if Config.TG_BOT_USERNAME is not None and tgbot is not None:
 async def help(event):
     if event.reply_to_msg_id:
         await event.get_reply_message()
-    response = await zedub.inline_query(Config.TG_BOT_USERNAME, "مساعده")
+    response = await zedub.inline_query(Config.APP_USERNAME, "مساعده")
     await response[0].click(event.chat_id)
     await event.delete()
 
