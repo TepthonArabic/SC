@@ -112,7 +112,7 @@ async def autoname(): #Code by T.me/zzzzl1l
 
 async def setup_bot():
     """
-    To set up bot for zthon
+    To set up bot for Tepthon
     """
     try:
         await zedub.connect()
