@@ -7,7 +7,7 @@ flag = True
 check = 0
 while flag:
     try:
-        from .chatbot import *
+        from .chatapp import *
         from .functions import *
         from .memeifyhelpers import *
         from .progress import *
