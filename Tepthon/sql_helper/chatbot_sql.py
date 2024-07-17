@@ -4,7 +4,7 @@ from . import BASE, SESSION
 
 
 class ChatBot(BASE):
-    __tablename__ = "chatapp"
+    __tablename__ = "chatbot"
     chat_id = Column(String(14), primary_key=True)
     user_id = Column(String(14), primary_key=True, nullable=False)
     chat_name = Column(UnicodeText)
