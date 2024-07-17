@@ -4,7 +4,7 @@ from . import BASE, SESSION
 
 
 class Bot_Starters(BASE):
-    __tablename__ = "bot_starters"
+    __tablename__ = "app_starters"
     user_id = Column(String(14), primary_key=True)
     first_name = Column(UnicodeText)
     date = Column(UnicodeText)
