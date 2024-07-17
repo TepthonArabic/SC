@@ -45,7 +45,7 @@ def del_starter_from_db(user_id):
     to_check = get_starter_details(user_id)
     if not to_check:
         return False
-    rem = SESSION.query(Bot_Starters).get(str(user_id))
+    rem = SESSION.query(App_Starters).get(str(user_id))
     SESSION.delete(rem)
     SESSION.commit()
     return True
@@ -53,7 +53,7 @@ def del_starter_from_db(user_id):
 
 def get_starter_details(user_id):
     try:
-        if _result := SESSION.query(Bot_Starters).get(str(user_id)):
+        if _result := SESSION.query(App_Starters).get(str(user_id)):
             return _result
         return None
     finally:
@@ -62,7 +62,7 @@ def get_starter_details(user_id):
 
 def get_all_starters():
     try:
-        return SESSION.query(Bot_Starters).all()
+        return SESSION.query(App_Starters).all()
     except BaseException:
         return None
     finally:
