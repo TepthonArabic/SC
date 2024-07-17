@@ -22,9 +22,6 @@ from telethon.errors import QueryIdInvalidError
 
 from telethon.events import CallbackQuery, InlineQuery
 
-from youtubesearchpython import VideosSearch
-
-
 
 from Tepthon import zedub
 
@@ -34,19 +31,7 @@ from ..Config import Config
 
 from ..helpers.functions import rand_key
 
-from ..helpers.functions.utube import (
 
-    download_button,
-
-    get_yt_video_id,
-
-    get_ytthumb,
-
-    result_formatter,
-
-    ytsearch_data,
-
-)
 
 from ..sql_helper.globals import gvarstatus
 
