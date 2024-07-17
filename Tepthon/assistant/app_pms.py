@@ -158,7 +158,7 @@ async def bot_start(event):
 
 
 @zedub.bot_cmd(incoming=True, func=lambda e: e.is_private)
-async def bot_pms(event):  # sourcery no-metrics
+async def app_pms(event):  # sourcery no-metrics
     chat = await event.get_chat()
     if check_is_black_list(chat.id):
         return
@@ -215,7 +215,7 @@ async def bot_pms(event):  # sourcery no-metrics
 
 
 @zedub.bot_cmd(edited=True)
-async def bot_pms_edit(event):  # sourcery no-metrics
+async def app_pms_edit(event):  # sourcery no-metrics
     chat = await event.get_chat()
     if check_is_black_list(chat.id):
         return
