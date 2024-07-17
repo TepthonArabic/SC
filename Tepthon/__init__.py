@@ -13,7 +13,7 @@ from .sql_helper.globals import addgvar, delgvar, gvarstatus
 
 __version__ = "3.3.3"
 __license__ = "حقـوق سـورس تيبثــون"
-__author__ = "تيبثــون <https://T.me/ZThon>"
+__author__ = "تيبثــون <https://T.me/Tepthon>"
 __copyright__ = "Tepthon Source (C) 2020 - 2024  " + __author__
 
 zedub.version = __version__
@@ -24,7 +24,7 @@ StartTime = time.time()
 zedversion = "3.3.3"
 
 if Config.UPSTREAM_REPO == "zel":
-    UPSTREAM_REPO_URL = "https://github.com/RRYR7/thesource"
+    UPSTREAM_REPO_URL = "https://github.com/TepthonArabic/SC"
 else:
     UPSTREAM_REPO_URL = Config.UPSTREAM_REPO
 
