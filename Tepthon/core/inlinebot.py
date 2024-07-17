@@ -16,7 +16,7 @@ from Tepthon import zedub
 
 from ..Config import Config
 from ..helpers.functions import rand_key
-)
+
 from ..sql_helper.globals import gvarstatus
 from .logger import logging
 
