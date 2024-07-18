@@ -28,7 +28,7 @@ botusername = Config.APP_USERNAME
 cmhd = Config.COMMAND_HAND_LER
 
 
-@zedub.bot_cmd(pattern="^/help$", from_users=Config.OWNER_ID)
+@zedub.bot_cmd(pattern="^/help$",from_users=Config.OWNER_ID)
 async def bot_help(event):
     await event.reply(
         """ᯓ 𝗧𝗲𝗽𝘁𝗵𝗼𝗻 𝗯𝗼𝘁 **- قائمــة أوامــر البـوت المسـاعـد 🤖♥️**
